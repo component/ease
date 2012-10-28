@@ -24,17 +24,17 @@
     draw();
   }
 
-  var x = 20;
-  var sx = x;
-  var dx = 700;
+  var startx = 20;
+  var x = startx;
+  var destx = 700;
   var y = 400 / 2;
   var duration = 1000;
   var start = Date.now();
 
   function draw() {
     var now = Date.now();
-    if (now - start >= duration) return;
-    x = ease.inOutCirc(now - start, sx, dx - x, duration) | 0;
+    if (now - start >= duration) stop = true;
+    x = ease.inOutCirc(now - start, startx, destx - x, duration) | 0;
     canvas.width = canvas.width;
     ctx.fillStyle = 'red';
     ctx.arc(x, y, 10, 0, Math.PI * 2, false);

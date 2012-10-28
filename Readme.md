@@ -50,6 +50,41 @@
   - out-circ
   - in-out-circ
 
+## Example
+
+```js
+var ease = require('ease');
+var requestAnimationFrame = require('raf');
+var canvas = document.querySelector('canvas');
+var ctx = canvas.getContext('2d');
+
+animate();
+
+var stop = false;
+function animate() {
+  if (stop) return;
+  requestAnimationFrame(animate);
+  draw();
+}
+
+var startx = 20;
+var x = startx;
+var destx = 700;
+var y = 400 / 2;
+var duration = 1000;
+var start = Date.now();
+
+function draw() {
+  var now = Date.now();
+  if (now - start >= duration) stop = true;
+  x = ease.inOutCirc(now - start, startx, destx - x, duration) | 0;
+  canvas.width = canvas.width;
+  ctx.fillStyle = 'red';
+  ctx.arc(x, y, 10, 0, Math.PI * 2, false);
+  ctx.fill();
+}
+```
+
 # License
 
   MIT
