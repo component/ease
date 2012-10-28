@@ -26,7 +26,7 @@
   - outCirc
   - inOutCirc
 
- Aliased as exports:
+## Aliases
 
   - in-quad
   - out-quad
