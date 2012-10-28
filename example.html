@@ -1,0 +1,43 @@
+
+<style>
+  canvas {
+    border: 1px solid #eee;
+  }
+</style>
+
+<script src="build/build.js"></script>
+
+<canvas width=500 height=400></canvas>
+
+<script>
+  var ease = require('ease');
+  var requestAnimationFrame = require('component-raf');
+  var canvas = document.querySelector('canvas');
+  var ctx = canvas.getContext('2d');
+
+  animate();
+
+  var stop = false;
+  function animate() {
+    if (stop) return;
+    requestAnimationFrame(animate);
+    draw();
+  }
+
+  var x = 20;
+  var sx = x;
+  var dx = 700;
+  var y = 400 / 2;
+  var duration = 1000;
+  var start = Date.now();
+
+  function draw() {
+    var now = Date.now();
+    if (now - start >= duration) return;
+    x = ease.inOutCirc(now - start, sx, dx - x, duration) | 0;
+    canvas.width = canvas.width;
+    ctx.fillStyle = 'red';
+    ctx.arc(x, y, 10, 0, Math.PI * 2, false);
+    ctx.fill();
+  }
+</script>
