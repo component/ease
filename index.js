@@ -100,6 +100,22 @@ exports.inOutCirc = function(n){
   return 0.5 * (Math.sqrt(1 - (n -= 2) * n) + 1);
 };
 
+exports.inBacn = function(n){
+  var s = 1.70158;
+  return n * n * (( s + 1 ) * n - s);
+};
+
+exports.outBacn = function(n){
+  var s = 1.70158;
+  return --n * n * ((s + 1) * n + s) + 1;
+};
+
+exports.inOutBack = function(n){
+  var s = 1.70158 * 1.525;
+  if ( ( n *= 2 ) < 1 ) return 0.5 * ( n * n * ( ( s + 1 ) * n - s ) );
+  return 0.5 * ( ( n -= 2 ) * n * ( ( s + 1 ) * n + s ) + 2 );
+};
+
 // aliases
 
 exports['in-quad'] = exports.inQuad;
