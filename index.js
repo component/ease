@@ -71,6 +71,21 @@ exports.inOutSine = function(n){
   return .5 * (1 - Math.cos(Math.PI * n));
 };
 
+exports.inExpo = function(n){
+  return 0 == n ? 0 : Math.pow(1024, n - 1);
+};
+
+exports.outExpo = function(n){
+  return 1 == n ? n : 1 - Math.pow(2, -10 * n);
+};
+
+exports.inOutExpo = function(n){
+  if (0 == n) return 0;
+  if (1 == n) return 1;
+  if ((n *= 2) < 1) return .5 * Math.pow(1024, n - 1);
+  return .5 * (-Math.pow(2, -10 * (n - 1)) + 2);
+};
+
 // aliases
 
 exports['in-quad'] = exports.inQuad;
