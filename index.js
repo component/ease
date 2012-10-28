@@ -1,4 +1,6 @@
 
+// easing functions from "Tween.js"
+
 exports.linear = function(n){
   return n;
 };
