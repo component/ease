@@ -59,6 +59,18 @@ exports.inOutQuint = function(n){
   return 0.5 * ((n -= 2) * n * n * n * n + 2);
 };
 
+exports.inSine = function(n){
+  return 1 - Math.cos(n * Math.PI / 2 );
+};
+
+exports.outSine = function(n){
+  return Math.sin(n * Math.PI / 2);
+};
+
+exports.inOutSine = function(n){
+  return .5 * (1 - Math.cos(Math.PI * n));
+};
+
 // aliases
 
 exports['in-quad'] = exports.inQuad;

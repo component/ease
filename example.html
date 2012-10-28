@@ -34,7 +34,7 @@
     var now = Date.now();
     if (now - start >= duration) stop = true;
     var p = (now - start) / duration;
-    val = ease.inOutQuint(p);
+    val = ease.inOutSine(p);
     x = startx + (destx - startx) * val;
     canvas.width = canvas.width;
     ctx.fillStyle = 'red';
