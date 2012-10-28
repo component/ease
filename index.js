@@ -128,3 +128,27 @@ exports.inOutCirc = function(t, b, c, d) {
   t -= 2;
   return c / 2 * (Math.sqrt(1 - t * t) + 1) + b;
 };
+
+// aliases
+
+exports['in-quad'] = exports.inQuad;
+exports['out-quad'] = exports.outQuad;
+exports['in-out-quad'] = exports.inOutQuad;
+exports['in-cube'] = exports.inCube;
+exports['out-cube'] = exports.outCube;
+exports['in-out-cube'] = exports.inOutCube;
+exports['in-quart'] = exports.inQuart;
+exports['out-quart'] = exports.outQuart;
+exports['in-out-quart'] = exports.inOutQuart;
+exports['in-quint'] = exports.inQuint;
+exports['out-quint'] = exports.outQuint;
+exports['in-out-quint'] = exports.inOutQuint;
+exports['in-sine'] = exports.inSine;
+exports['out-sine'] = exports.outSine;
+exports['in-out-sine'] = exports.inOutSine;
+exports['in-expo'] = exports.inExpo;
+exports['out-expo'] = exports.outExpo;
+exports['in-out-expo'] = exports.inOutExpo;
+exports['in-circ'] = exports.inCirc;
+exports['out-circ'] = exports.outCirc;
+exports['in-out-circ'] = exports.inOutCirc;

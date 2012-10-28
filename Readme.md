@@ -26,6 +26,30 @@
   - outCirc
   - inOutCirc
 
+ Aliased as exports:
+
+  - in-quad
+  - out-quad
+  - in-out-quad
+  - in-cube
+  - out-cube
+  - in-out-cube
+  - in-quart
+  - out-quart
+  - in-out-quart
+  - in-quint
+  - out-quint
+  - in-out-quint
+  - in-sine
+  - out-sine
+  - in-out-sine
+  - in-expo
+  - out-expo
+  - in-out-expo
+  - in-circ
+  - out-circ
+  - in-out-circ
+
 # License
 
   MIT
