@@ -86,6 +86,20 @@ exports.inOutExpo = function(n){
   return .5 * (-Math.pow(2, -10 * (n - 1)) + 2);
 };
 
+exports.inCirc = function(n){
+  return 1 - Math.sqrt(1 - n * n);
+};
+
+exports.outCirc = function(n){
+  return Math.sqrt(1 - (--n * n));
+};
+
+exports.inOutCirc = function(n){
+  n *= 2
+  if (n < 1) return -0.5 * (Math.sqrt(1 - n * n) - 1);
+  return 0.5 * (Math.sqrt(1 - (n -= 2) * n) + 1);
+};
+
 // aliases
 
 exports['in-quad'] = exports.inQuad;
