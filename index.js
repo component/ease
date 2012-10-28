@@ -100,17 +100,17 @@ exports.inOutCirc = function(n){
   return 0.5 * (Math.sqrt(1 - (n -= 2) * n) + 1);
 };
 
-exports.inBacn = function(n){
+exports.inBack = function(n){
   var s = 1.70158;
   return n * n * (( s + 1 ) * n - s);
 };
 
-exports.outBacn = function(n){
+exports.outBack = function(n){
   var s = 1.70158;
   return --n * n * ((s + 1) * n + s) + 1;
 };
 
-exports.inOutBacn = function(n){
+exports.inOutBack = function(n){
   var s = 1.70158 * 1.525;
   if ( ( n *= 2 ) < 1 ) return 0.5 * ( n * n * ( ( s + 1 ) * n - s ) );
   return 0.5 * ( ( n -= 2 ) * n * ( ( s + 1 ) * n + s ) + 2 );
@@ -160,6 +160,9 @@ exports['in-out-expo'] = exports.inOutExpo;
 exports['in-circ'] = exports.inCirc;
 exports['out-circ'] = exports.outCirc;
 exports['in-out-circ'] = exports.inOutCirc;
+exports['in-back'] = exports.inBack;
+exports['out-back'] = exports.outBack;
+exports['in-out-back'] = exports.inOutBack;
 exports['in-bounce'] = exports.inBounce;
 exports['out-bounce'] = exports.outBounce;
 exports['in-out-bounce'] = exports.inOutBounce;

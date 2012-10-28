@@ -25,6 +25,12 @@
   - inCirc
   - outCirc
   - inOutCirc
+  - inBack
+  - outBack
+  - inOutBack
+  - inBounce
+  - outBounce
+  - inOutBounce
 
 ## Aliases
 
@@ -49,6 +55,12 @@
   - in-circ
   - out-circ
   - in-out-circ
+  - in-back
+  - out-back
+  - in-out-back
+  - in-bounce
+  - out-bounce
+  - in-out-bounce
 
 ## Example
 
