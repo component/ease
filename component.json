@@ -2,7 +2,7 @@
   "name": "ease",
   "repo": "component/ease",
   "description": "Easing functions (for canvas etc)",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": ["ease", "easing", "tween"],
   "dependencies": {},
   "development": {
