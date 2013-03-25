@@ -1,0 +1,13 @@
+{
+  "name": "ease-component",
+  "description": "Easing functions (for canvas etc)",
+  "version": "1.0.0",
+  "keywords": ["ease", "easing", "tween"],
+  "dependencies": {},
+  "component": {
+    "scripts": {
+      "ease/index.js": "index.js"
+    }
+  },
+  "license": "MIT"
+}
