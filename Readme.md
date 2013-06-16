@@ -31,6 +31,9 @@
   - inBounce
   - outBounce
   - inOutBounce
+  - inElastic
+  - outElastic
+  - inOutElastic
 
 ## Aliases
 
@@ -61,6 +64,9 @@
   - in-bounce
   - out-bounce
   - in-out-bounce
+  - in-elastic
+  - out-elastic
+  - in-out-elastic
 
 ## Example
 
